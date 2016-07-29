@@ -1,0 +1,6 @@
+{
+  "ImageId": "ami-fce3c696",
+  "SecurityGroupIds": [ "sg-42e5dd39" ],
+  "InstanceType": "c3.4xlarge",
+  "KeyName": "aws-nv-key-pair"
+}
