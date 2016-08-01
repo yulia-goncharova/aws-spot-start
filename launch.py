@@ -27,8 +27,8 @@ def make_request(query, get_output=False, verbose=0):
 
 debug = 1
 
-spot_result = make_request('aws ec2 request-spot-instances --spot-price  {} --instance-count 1 --type one-time ' \
-               '--launch-specification file://config/specification.json'.format(MAX_PRICE), True, debug)
+spot_result = make_request('aws ec2 request-spot-instances --spot-price  {} --instance-count 1 --type one-time '
+                           '--launch-specification file://config/specification.json'.format(MAX_PRICE), True, debug)
 spot_id = spot_result['SpotInstanceRequests'][0]['SpotInstanceRequestId']
 
 make_request('aws ec2 wait spot-instance-request-fulfilled --spot-instance-request-ids {}'.format(spot_id), False, debug)
@@ -49,5 +49,5 @@ make_request('scp -i {} -r notepads ubuntu@{}:~'.format(PEM_FILE, host), False, 
 make_request("ssh -i {} ubuntu@{} 'bash -s' < config/remote_setup.sh".format(PEM_FILE, host), False, debug)
 
 new = 2
-url = 'https://{}:8888'.format(host)
-webbrowser.open(url,new=new)
+url = 'http://{}:8888'.format(host)
+webbrowser.open(url, new=new)
