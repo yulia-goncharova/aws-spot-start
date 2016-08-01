@@ -23,7 +23,7 @@ Default output format [None]: ENTER
 
 List of region names you can check [here] (http://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region). Note that after registration Amazon allows you to use only 2 regions, you can find them in support email 'Available regions for Amazon Web Services EC2'.
 
-You can check configuration:
+You can check installation:
 ```
 $ aws ec2 describe-account-attributes
 {
@@ -53,3 +53,9 @@ conda install -y scikit-learn
 ```
 
  - Check and edit config/specification.json. Examples and JSON specification is [here] (http://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-instances.html)
+
+## Run
+
+```
+$ python launch.py
+```
