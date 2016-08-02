@@ -23,6 +23,10 @@ Default output format [None]: ENTER
 
 List of region names you can check [here] (http://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region). Note that after registration Amazon allows you to use only 2 regions, you can find them in support email 'Available regions for Amazon Web Services EC2'.
 
+Create security group for your IP and save its id to config/specification.json:
+
+![Alt text](https://cloud.githubusercontent.com/assets/10939473/17329084/09562810-58d2-11e6-95f5-1e4578e38ea5.png "Optional title")
+
 You can check installation:
 ```
 $ aws ec2 describe-account-attributes
