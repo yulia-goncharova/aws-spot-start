@@ -47,7 +47,7 @@ $ aws ec2 describe-account-attributes
  ```
  # chmod 400 credentials/my-key-pair.pem
  ```
- - [Create security group] (http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/getting-started-create-security-group.html) for your IP and save id to config/specification.json:
+ - [Create security group] (http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/getting-started-create-security-group.html) for your IP and save group id to config/specification.json:
 
 ![Alt text](https://cloud.githubusercontent.com/assets/10939473/17329084/09562810-58d2-11e6-95f5-1e4578e38ea5.png "Optional title")
 
