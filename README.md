@@ -11,7 +11,7 @@ Suppose you already have Amazon account (if not - here is some instructions how 
 $ pip install awscli
 ```
 
- - Than [make and download credentials] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html) anf [configure cli] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html):
+ - Then [make and download credentials] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html) anf [configure cli] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html):
 
 ```
 $ aws configure
