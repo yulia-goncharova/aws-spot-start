@@ -42,14 +42,18 @@ $ aws ec2 describe-account-attributes
 
 ## Configure
 
- - Save *pem* file to *credentials* folder and change *PEM_FILE* value in config/config.py
+ - Save *pem* file to *credentials* folder and change *PEM_FILE* value in config/config.py. Change file permissions:
+ - 
+ ```
+ # chmod 400 credentials/my-key-pair.pem
+ ```
 
  - Check and update your maximum price for instance in *MAX_PRICE*
 
  - Put your remote initialisation code in file config/remote_setup.sh
 This repository uses development version of scikit-learn because of [MLPClassifier] (http://scikit-learn.org/dev/modules/generated/sklearn.neural_network.MLPClassifier.html) using advantages, but if it not necessary you can simply setup master brunch:
 ```
-conda install -y scikit-learn
+$ conda install -y scikit-learn
 ```
 
  - Check and edit config/specification.json. Examples and JSON specification is [here] (http://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-instances.html)
@@ -59,3 +63,4 @@ conda install -y scikit-learn
 ```
 $ python launch.py
 ```
+
