@@ -4,7 +4,7 @@ This is a Python script that launch [AWS](http://aws.amazon.com) spot instance w
 
 ## Install
 
-Suppose you already have Amazon account (if not - here is some instructions how to [sing up] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html#cli-signup) and [download key pair] (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
+Suppose you already have Amazon account (otherwise here is some instructions how to [sing up] (http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html#cli-signup) and [download key pair] (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
 
  - First install [aws-cli] (https://aws.amazon.com/cli/):
 ```
@@ -23,7 +23,7 @@ Default output format [None]: ENTER
 
 List of region names you can check [here] (http://docs.aws.amazon.com/general/latest/gr/rande.html#ec2_region). Note that after registration Amazon allows you to use only 2 regions, you can find them in support email 'Available regions for Amazon Web Services EC2'.
 
-[Create security group] (http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/getting-started-create-security-group.html) for your IP and save id to config/specification.json:
+ - [Create security group] (http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/getting-started-create-security-group.html) for your IP and save id to config/specification.json:
 
 ![Alt text](https://cloud.githubusercontent.com/assets/10939473/17329084/09562810-58d2-11e6-95f5-1e4578e38ea5.png "Optional title")
 
