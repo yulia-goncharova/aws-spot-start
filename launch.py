@@ -45,6 +45,7 @@ host = host_result['Reservations'][0]['Instances'][0]['PublicDnsName']
 make_request('ssh -o StrictHostKeyChecking=no ubuntu@{}'.format(host), False, debug)
 make_request('scp -i {} -r data ubuntu@{}:~'.format(PEM_FILE, host), False, debug)
 make_request('scp -i {} -r notepads ubuntu@{}:~'.format(PEM_FILE, host), False, debug)
+make_request('scp -i {} -r credentials/cassandra.crt ubuntu@{}:~'.format(PEM_FILE, host), False, debug)
 
 make_request("ssh -i {} ubuntu@{} 'bash -s' < config/remote_setup.sh".format(PEM_FILE, host), False, debug)
 
